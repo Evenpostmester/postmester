@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="no">
 <head>
   <meta charset="UTF-8" />
@@ -8,11 +9,12 @@
     body {
       margin: 0;
       padding: 0;
-      background-image: url('postman1.jpg'); /* <-- Bytt ut denne! */
+      background-image: url('postman1.jpg'); /* <-- Bytt ut denne hvis du vil */
       background-size: cover;
       background-position: center;
       height: 100vh;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       font-family: 'Orbitron', sans-serif;
@@ -23,10 +25,27 @@
     h1 {
       font-size: 4rem;
       text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .contact-button {
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      background-color: rgba(0, 123, 255, 0.9);
+      border: none;
+      color: white;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .contact-button:hover {
+      background-color: rgba(0, 123, 255, 1);
     }
   </style>
 </head>
 <body>
   <h1>POSTMESTERTJENESTEN</h1>
+  <a href="kontakt.html" class="contact-button">Kontakt oss</a>
 </body>
 </html>
