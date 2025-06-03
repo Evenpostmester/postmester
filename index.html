@@ -9,7 +9,7 @@
     body {
       margin: 0;
       padding: 0;
-      background-image: url('postman1.jpg'); /* <-- Bytt ut denne hvis du vil */
+      background-image: url('postman1.jpg'); /* Bakgrunnsbilde for hele siden */
       background-size: cover;
       background-position: center;
       height: 100vh;
@@ -29,18 +29,24 @@
     }
 
     .contact-button {
-      padding: 15px 30px;
+      display: inline-block;
+      padding: 20px 40px;
       font-size: 1.2rem;
-      background-color: rgba(0, 123, 255, 0.9);
+      background-image: url('postman.jpg'); /* ← Endre til bildet du vil bruke */
+      background-size: cover;
+      background-position: center;
       border: none;
+      border-radius: 12px;
       color: white;
-      cursor: pointer;
       text-decoration: none;
-      transition: background-color 0.3s ease;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+      text-align: center;
     }
 
     .contact-button:hover {
-      background-color: rgba(0, 123, 255, 1);
+      transform: scale(1.05);
     }
   </style>
 </head>
