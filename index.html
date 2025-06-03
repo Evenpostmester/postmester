@@ -38,7 +38,6 @@
       border-radius: 10px;
       color: white;
       text-decoration: none;
-      cursor: url('fingern2.png'), auto;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
       transition: transform 0.3s ease;
       z-index: 10;
@@ -49,6 +48,13 @@
       width: 160px;
       height: 110px;
       text-align: center;
+
+      cursor: url('fingern.png'), auto; /* ← Standard peker */
+      }
+
+      a, button {
+        cursor: url('fingern2.png'), pointer; /* ← Når du holder over lenker/knapper */
+      }
     }
 
     .nav-button:hover {
