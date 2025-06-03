@@ -9,49 +9,64 @@
     body {
       margin: 0;
       padding: 0;
-      background-image: url('postman1.jpg'); /* Bakgrunnsbilde for hele siden */
+      background-image: url('postman1.jpg');
       background-size: cover;
       background-position: center;
       height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
       font-family: 'Orbitron', sans-serif;
       color: white;
       text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+      position: relative;
     }
 
     h1 {
       font-size: 4rem;
       text-align: center;
-      margin-bottom: 2rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
 
-    .contact-button {
-      display: inline-block;
-      padding: 20px 40px;
-      font-size: 1.2rem;
-      background-image: url('postman.jpg'); /* ← Endre til bildet du vil bruke */
+    .nav-button {
+      position: absolute;
+      padding: 15px 25px;
+      font-size: 1rem;
       background-size: cover;
       background-position: center;
       border: none;
-      border-radius: 12px;
+      border-radius: 10px;
       color: white;
       text-decoration: none;
       cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
       transition: transform 0.3s ease;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+      width: 160px;
+      height: 60px;
       text-align: center;
     }
 
-    .contact-button:hover {
+    .nav-button:hover {
       transform: scale(1.05);
     }
+
+    .top-left     { top: 20px; left: 20px; background-image: url('postman.jpg'); }
+    .top-right    { top: 20px; right: 20px; background-image: url('postman.jpg'); }
+    .bottom-left  { bottom: 20px; left: 20px; background-image: url('postman.jpg'); }
+    .bottom-right { bottom: 20px; right: 20px; background-image: url('postman.jpg'); }
   </style>
 </head>
 <body>
   <h1>POSTMESTERTJENESTEN</h1>
-  <a href="kontakt.html" class="contact-button">Kontakt oss</a>
+
+  <a href="om.html" class="nav-button top-left">Om oss</a>
+  <a href="kontakt.html" class="nav-button top-right">Kontakt oss</a>
+  <a href="donasjoner.html" class="nav-button bottom-left">Donasjoner</a>
+  <a href="anmeldelser.html" class="nav-button bottom-right">Anmeldelser</a>
 </body>
 </html>
